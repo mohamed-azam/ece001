@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Database system</title>
+<body>
+
+<center><h1 style="background-color:DodgerBlue;">Database Destribution System</h1></center>
+
+<center><img src="pc2.png"cover pic" width="500" height="300"/></center>
+
+<p>Distributed Systems
+Data spread over multiple machines (also referred to as sites or nodes).
+Network interconnects the machines
+Data shared by users on multiple machines
+Distributed Databases
+Homogeneous distributed databases
+Same software/schema on all sites, data may be partitioned among sites
+Goal: provide a view of a single database, hiding details of distribution
+Heterogeneous distributed databases
+Different software/schema on different sites
+Goal: integrate existing databases to provide useful functionality
+Differentiate between local and global transactions
+A local transaction accesses data in the single site at which the transaction was initiated.
+A global transaction either accesses data in a site different from the one at which the transaction was initiated or accesses data in several different sites.
+Implementation Issues for Distributed Databases
+a Atomicity needed even for transactions that update data at multiple sites
+The two-phase commit protocol (2PC) is used to ensure atomicity
+Basic idea:  each site executes transaction until just before commit, and the leaves final decision to a coordinator
+Each site must follow decision of coordinator, even if there is a failure while waiting for coordinators decision
+2PC is not always appropriate:  other transaction models based on persistent messaging, and workflows, are also used 
+Distributed concurrency control (and deadlock detection) required
+Data items may be replicated to improve datavailability
+<center><img src="pc22.png"cover pic" width="500" height="300"/></center>
+<h2>Implementation Issues for Distributed Databases</h2>
+
+<p>a Atomicity needed even for transactions that update data at multiple sites
+The two-phase commit protocol (2PC) is used to ensure atomicity
+Basic idea:  each site executes transaction until just before commit, and the leaves final decision to a coordinator
+Each site must follow decision of coordinator, even if there is a failure while waiting for coordinators decision
+2PC is not always appropriate:  other transaction models based on persistent messaging, and workflows, are also used 
+Distributed concurrency control (and deadlock detection) required
+Data items may be replicated to improve datavailability
+<h2 style="background-color:Tomato;">links:</h2>
+<ul>
+<li><a href="index.html" target="blank" title="computer engineering">Database System</a></li>
+<li><a href="p1.html" target="blank" title="computer engineering">Database an overview</a></li>
+  <li><a href="p2.html" target="blank" title="computer engineering">Data Distribution system</a></li>
+  <li><a href="p3.html" target="blank" title="computer engineering">Data classification table</a></li>
+  <li><a href="p4.html" target="blank" title="computer engineering">Applications</a></li>
+  <li><a href="p5.html" target="blank" title="computer engineering">Data Servers</a></li>
+</u1>
+
+</body>
+
+</html>
